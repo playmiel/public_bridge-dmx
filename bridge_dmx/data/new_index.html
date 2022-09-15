@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>DMX</title>
+  <noscript>Vous avez besoin de javascript pour utiliser cette page</noscript>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" rel="stylesheet">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified CSS -->
+  <script type="application/javascript" src="new_java.js"></script>
+  <link rel="stylesheet" type="text/css" href="new_css.css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body onload="load()">
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+      <path
+        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+    </symbol>
+    <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+      <path
+        d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+    </symbol>
+    <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+      <path
+        d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+    </symbol>
+  </svg>
+
+  <div class="alert alert-success hide alert-dismissible center-div text-center" role="alert" id='bootstrap-alert'>
+    <svg class="bi flex-shrink-0 me-2" width="15" height="15" role="img" aria-label="Success:">
+      <use xlink:href="#check-circle-fill" />
+    </svg>
+    <strong>sauvegarde effectuer</strong>
+    <span id="This-is-the-real-id"></span>
+  </div>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg fixed-top py-4 ">
+      <div class="container">
+        <a href="#" class="navbar-brand text-uppercase text-center font-weight-bold">
+
+          <h1>bridge_dmx</h1>
+
+        </a>
+        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+          class="navbar-toggler navbar-toggler-right"><em class="fa fa-bars"></em></button>
+
+        <div id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="#" class="nav-link text-uppercase font-weight-bold">DMX<span
+                  class="sr-only"></span></a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">canaux</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">groupes</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">couleur</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">info</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container " id="div_refresh">
+
+    <div class="pt-5 text-white">
+      <header class="py-5 mt-5">
+
+        <h1 class="display-4 text-center">DMX</h1>
+
+      </header>
+
+      <div class="py-5">
+        <ul class="nav nav-pills justify-content-center font-weight-bold flex-column flex-sm-row" id="pills-tab"
+          role="tablist">
+          <li class="nav-item pill-2" role="presentation">
+            <button class="nav-link text-uppercase" id="pills-canal-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-canal" type="button" role="tab" aria-controls="pills-canal" aria-selected="false">
+
+              <h3>
+                <p class="text-light">canal <ion-icon name="bulb-sharp" size="large"></ion-icon>
+                </p>
+              </h3>
+
+            </button>
+          </li>
+          </li>
+          <li class="nav-item pill-2" role="presentation">
+            <button class="nav-link text-uppercase" id="pills-groupe-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-groupe" type="button" role="tab" aria-controls="pills-groupe"
+              aria-selected="false">
+              <h3>
+                <p class="text-light">groupe <ion-icon name="grid-sharp" size="large"></ion-icon>
+                </p>
+              </h3>
+
+
+
+            </button>
+          </li>
+          <li class="nav-item pill-2" role="presentation">
+            <button class="nav-link text-uppercase" id="pills-groupeRGB-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-groupeRGB" type="button" role="tab" aria-controls="pills-groupeRGB"
+              aria-selected="false">
+              <h3>
+                <p class="text-light ">groupe<span class="text-danger">R</span><span class="text-success">G</span><span
+                    class="text-primary">B </span>
+                  <ion-icon name="grid-sharp" size="large"></ion-icon>
+                </p>
+              </h3>
+            </button>
+          </li>
+
+          <li class="nav-item pill-2" role="presentation">
+            <button class="nav-link text-uppercase" id="pills-groupeRGBW-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-groupeRGBW" type="button" role="tab" aria-controls="pills-groupeRGBW"
+              aria-selected="false">
+              <h3>
+                <p class="text-light ">groupe<span class="text-danger">R</span><span class="text-success">G</span><span
+                    class="text-primary">B</span><span class="text-light">W <ion-icon name="grid-sharp" size="large">
+                    </ion-icon>
+                    <ion-icon name="contrast-sharp" size=large></ion-icon>
+                </p>
+              </h3>
+            </button>
+          </li>
+          <li class="nav-item pill-2" role="presentation">
+            <button class="nav-link text-uppercase" id="pills-setting-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-setting" type="button" role="tab" aria-controls="pills-setting"
+              aria-selected="false">
+              <h3>
+                <p class="text-light">setting <ion-icon name="settings" size="large"></ion-icon>
+                </p>
+              </h3>
+            </button>
+          </li>
+          <li class="nav-item pill-2" role="presentation">
+            <button class="nav-link text-uppercase" id="pills-buttons-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-buttons" type="button" role="tab" aria-controls="pills-buttons"
+              aria-selected="false">
+              <h3>
+                <p class="text-light">buttons <ion-icon name="radio-button-on-sharp" size="large">
+                  </ion-icon>
+                </p>
+              </h3>
+
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content d-flex" id="pills-tabContent">
+          <div class="tab-pane fade" id="pills-canal" role="tabpanel" aria-labelledby="pills-canal-tab">
+            <div class="container">
+              <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                <div class="col">
+                  <div class="p-4 border border-dark">
+                    <p class="text-uppercase">canal:
+                      <br></br>
+                      <input class="text-white bg-dark" aria-describedby="canalHelp" type="number" id="canalNumber"
+                        min="1" max="255" placeholder="1" onkeyup="canal()" required>
+                      <span class="validity"></span>
+                      <small id="canalHelp" class="form-text text-white">1~255</small>
+
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="p-4 border border-dark ">
+                    <p class="text-uppercase">valeur:
+                      <br></br>
+                      <input class="text-white bg-dark" aria-describedby="valeurHelp" type="number" min="0" max="100"
+                        id="valeurNumber" placeholder="0" value="" onkeyup="valeur()" required>
+                      <span class="validity"></span>
+                      <small id="valeurHelp" class="form-text text-white">0~100</small>
+                    <div class=" justify-content-around">
+                      <p class="text">sauvegarder :
+                        <button class="btn btn-outline-dark" type="submit" id="savebutton" role="button" title="save"
+                          onclick="saveButton()">
+                      </p>
+                      <ion-icon name="save"></ion-icon>
+
+                      </button>
+                    </div>
+
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="p-4 border border-dark">
+                    <p class="text-uppercase">offset_max:
+                      <br></br>
+                      <input class="text-white bg-dark" aria-describedby="offset_maxHelp" type="number"
+                        id="offset_maxNumber" min="0" max="100" placeholder="100" value="" onkeyup="offset_max()"
+                        required>
+                      <span class="validity"></span>
+                      <small id="offset_maxHelp" class="form-text text-white">0~100</small>
+
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="p-4 border border-dark">
+                    <p class="text-uppercase">offset_min:
+                      <br></br>
+                      <input class="text-white bg-dark" aria-describedby="offset_minHelp" type="number"
+                        id="offset_minNumber" min="0" max="100" placeholder="0" value="" onkeyup="offset_min()"
+                        required>
+                      <span class="validity"></span>
+                      <small id="offset_minHelp" class="form-text text-white">0~100</small>
+
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="p-4 border border-dark ">
+
+                    <p class="text-uppercase">gamma:
+                      <br></br>
+                      <input class="text-white bg-dark" aria-describedby="gammaHelp" type="number" id="gammaNumber"
+                        min="0.1" max="3.0" step="0.1" placeholder="1.0" value="" onkeyup="gamma()" required>
+                      <span class="validity"></span>
+                      <small id="gammaHelp" class="form-text text-white">0.1~3</small>
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade justify-content-center" id="pills-groupe" role="tabpanel"
+            aria-labelledby="pills-groupe-tab">
+            <div class="container">
+
+
+              <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                <div class="col">
+                  <div class="p-4 ">
+
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-dark text" id="exampleModalLabel">Choix groupe</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="dropdown mx-3">
+                              <button class="btn btn-secondary dropdown-toggle  btn-outline-dark" type="button"
+                                id="dropdownMenu1" data-bs-toggle="dropdown" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="true">
+                                Groupe
+                              </button>
+                              <div class="dropdown-menu  dropdown-menu-dark" aria-labelledby="dropdownMenu1">
+                                <button id="groupe1" class="dropdown-item" title="groupe=1" type="button"
+                                  onclick="showGenre(this)">groupe1</button>
+                                <button id="groupe2" class="dropdown-item" title="groupe=2" type="button"
+                                  onclick="showGenre(this)">groupe2</button>
+                                <button id="groupe3" class="dropdown-item" title="groupe=3" type="button"
+                                  onclick="showGenre(this)">groupe3</button>
+                                <button id="groupe4" class="dropdown-item" title="groupe=4" type="button"
+                                  onclick="showGenre(this)">groupe4</button>
+                                <button id="groupe5" class="dropdown-item" title="groupe=5" type="button"
+                                  onclick="showGenre(this)">groupe5</button>
+                                <button id="groupe6" class="dropdown-item" title="groupe=6" type="button"
+                                  onclick="showGenre(this)">groupe6</button>
+                                <button id="groupe7" class="dropdown-item" title="groupe=7" type="button"
+                                  onclick="showGenre(this)">groupe7</button>
+                                <button id="groupe8" class="dropdown-item" title="groupe=8" type="button"
+                                  onclick="showGenre(this)">groupe8</button>
+                                <button id="groupe9" class="dropdown-item" title="groupe=9" type="button"
+                                  onclick="showGenre(this)">groupe9</button>
+                                <button id="groupe10" class="dropdown-item" title="groupe=10" type="button"
+                                  onclick="showGenre(this)">groupe10</button>
+                                <button id="groupe11" class="dropdown-item" title="groupe=11" type="button"
+                                  onclick="showGenre(this)">groupe11</button>
+                                <button id="groupe12" class="dropdown-item" title="groupe=12" type="button"
+                                  onclick="showGenre(this)">groupe12</button>
+                                <button id="groupe13" class="dropdown-item" title="groupe=13" type="button"
+                                  onclick="showGenre(this)">groupe13</button>
+                                <button id="groupe14" class="dropdown-item" title="groupe=14" type="button"
+                                  onclick="showGenre(this)">groupe14</button>
+                                <button id="groupe15" class="dropdown-item" title="groupe=15" type="button"
+                                  onclick="showGenre(this)">groupe15</button>
+                                <button id="groupe16" class="dropdown-item" title="groupe=16" type="button"
+                                  onclick="showGenre(this)">groupe16</button>
+                                <button id="groupe17" class="dropdown-item" title="groupe=17" type="button"
+                                  onclick="showGenre(this)">groupe17</button>
+                                <button id="groupe18" class="dropdown-item" title="groupe=18" type="button"
+                                  onclick="showGenre(this)">groupe18</button>
+                                <button id="groupe19" class="dropdown-item" title="groupe=19" type="button"
+                                  onclick="showGenre(this)">groupe19</button>
+                                <button id="groupe20" class="dropdown-item" title="groupe=20" type="button"
+                                  onclick="showGenre(this)">groupe20</button>
+                                <button id="groupe21" class="dropdown-item" title="groupe=21" type="button"
+                                  onclick="showGenre(this)">groupe21</button>
+                                <button id="groupe22" class="dropdown-item" title="groupe=22" type="button"
+                                  onclick="showGenre(this)">groupe22</button>
+                                <button id="groupe23" class="dropdown-item" title="groupe=23" type="button"
+                                  onclick="showGenre(this)">groupe23</button>
+                                <button id="groupe24" class="dropdown-item" title="groupe=24" type="button"
+                                  onclick="showGenre(this)">groupe24</button>
+                                <button id="groupe25" class="dropdown-item" title="groupe=25" type="button"
+                                  onclick="showGenre(this)">groupe25</button>
+                                <button id="groupe26" class="dropdown-item" title="groupe=26" type="button"
+                                  onclick="showGenre(this)">groupe26</button>
+                                <button id="groupe27" class="dropdown-item" title="groupe=27" type="button"
+                                  onclick="showGenre(this)">groupe27</button>
+                                <button id="groupe28" class="dropdown-item" title="groupe=28" type="button"
+                                  onclick="showGenre(this)">groupe28</button>
+                                <button id="groupe29" class="dropdown-item" title="groupe=29" type="button"
+                                  onclick="showGenre(this)">groupe29</button>
+                                <button id="groupe30" class="dropdown-item" title="groupe=30" type="button"
+                                  onclick="showGenre(this)">groupe30</button>
+                                <button id="groupe31" class="dropdown-item" title="groupe=31" type="button"
+                                  onclick="showGenre(this)">groupe31</button>
+                                <button id="groupe32" class="dropdown-item" title="groupe=32" type="button"
+                                  onclick="showGenre(this)">groupe32</button>
+                              </div>
+                            </div>
+                            <div class="input-group flex-nowrap">
+                              <span class="input-group-text" id="addon-wrapping">changer le nom du groupe :</span>
+                              <input type="text" id="text_groupe" placeholder="nom du groupe"
+                                aria-label="nom des groupe" minlength="1" maxlength="32" class="form-control"
+                                id="nom du groupe" aria-describedby="addon-wrapping" onblur="namegroupe()"
+                                onkeyup="saveclick()" disabled>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                              onclick="clickclose()">Close</button>
+                            <button id="clicksave" type="button" class="btn btn-primary" onclick="clicksave()"
+                              disabled>Save
+                              changes </button>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="col">
+                  <div class="p-4 border border-dark ">
+                    <p class="text">sauvegarder :
+                      <button class="btn btn-outline-dark" type="submit" id="savebutton" role="button" title="save"
+                        onclick="saveButton_groupe()">
+                    </p>
+                    <ion-icon name="save"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="p-4 border border-dark">
+                    <p class="text-uppercase">dimmer:
+                      <br></br>
+                      <input class="text-white bg-dark" aria-describedby="dimmerHelp" type="number" id="dimmerNumber"
+                        min="1.0" max="100.0" step="1" placeholder="1.0" value="100" onkeyup="dimmer()" required>
+                      <span class="validity"></span>
+                      <small id="dimmerHelp" class="form-text text-white">1~100</small>
+
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="p-4 border border-dark">
+                    <p class="text-uppercase">valeur du groupe:
+                      <br></br>
+                      <input class="text-white bg-dark" aria-describedby="value_groupeHelp" type="number"
+                        id="value_groupeNumber" min="0.0" max="100.0" step="1" placeholder="0" value=""
+                        onkeyup="value_groupe()" required>
+                      <span class="validity"></span>
+                      <small id="value_groupeHelp" class="form-text text-white">0~100</small>
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="p-4 border border-dark ">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      cliquer pour choisir le groupe
+                      <br></br>
+
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br></br>
+            <table id="table" class="table table-dark table-striped table-bordered justify-content-center center">
+              <thead>
+                <tr>
+                  <th style="width: 7.5%" data-field="N°" scope="col">N°</th>
+                  <th data-field="name_canal" scope="col">nom canal</th>
+                  <th data-field="canal" scope="col">canal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th id="1" scope="row">1</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_1" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber1" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="2" scope="row">2</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_2" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber2" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="3" scope="row">3</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_3" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber3" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="4" scope="row">4</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_4" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber4" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="5" scope="row">5</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_5" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber5" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="6" scope="row">6</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_6" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber6" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="7" scope="row">7</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_7" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber7" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="8" scope="row">8</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_8" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber8" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="9" scope="row">9</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_9" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber9" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="10" scope="row">10</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_10" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber10" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="11" scope="row">11</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_11" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber11" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="12" scope="row">12</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_12" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber12" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="13" scope="row">13</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_13" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber13" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="14" scope="row">14</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_14" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber14" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="15" scope="row">15</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_15" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber15" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="16" scope="row">16</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_16" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber16" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="17" scope="row">17</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_17" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber17" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="18" scope="row">18</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_18" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber18" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="19" scope="row">19</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_19" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber19" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="20" scope="row">20</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_20" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber20" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="21" scope="row">21</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_21" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber21" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="22" scope="row">22</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_22" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber22" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="23" scope="row">23</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_23" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber23" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="24" scope="row">24</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_24" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber24" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="25" scope="row">25</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_25" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber25" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="26" scope="row">26</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_26" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber26" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="27" scope="row">27</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_27" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber27" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="28" scope="row">28</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_28" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber28" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="29" scope="row">29</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_29" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber29" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="30" scope="row">30</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_30" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber30" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="31" scope="row">31</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_31" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber31" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+                <tr>
+                  <th id="32" scope="row">32</th>
+                  <td><input placeholder="nom du canal" aria-label="nom du canal" minlength="1" maxlength="32"
+                      class="form-control" id="nom_du_canal_32" aria-describedby="addon-wrapping"
+                      onkeyup="name_canal(this)" \> </td>
+                  <td> <input class="text-white bg-dark" aria-describedby="canal_groupeHelp" type="number"
+                      id="canal_groupeNumber32" min="1.0" max="255.0" step="1" placeholder="1.0" value=""
+                      onkeyup="canal_groupe(this)" onfocus="old_value_canal(this)" required><span
+                      class="validity"></span>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+          <div class="tab-pane fade" id="pills-groupeRGB" role="tabpanel" aria-labelledby="pills-groupeRGB-tab">
+            <label for="exampleColorInput" class="form-label">Color picker</label>
+            <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c"
+              title="Choose your color">
+          </div>
+
+          <div class="tab-pane fade" id="pills-groupeRGBW" role="tabpanel" aria-labelledby="pills-groupeRGBW-tab">test
+            GroupeRGBW</div>
+          <div class="tab-pane fade" id="pills-setting" role="tabpanel" aria-labelledby="pills-setting-tab">test
+            Setting</div>
+          <div class="tab-pane fade" id="pills-buttons" role="tabpanel" aria-labelledby="pills-buttons-tab">
+            test Buttons</div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
+<br></br>
+
+</html>

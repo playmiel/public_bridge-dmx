@@ -1,0 +1,427 @@
+[
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpkeut8ipa.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\Esp.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpblter6wx.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\FirmwareMSC.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpeq37xx7f.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\FunctionalInterrupt.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpb9w598rd.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\HWCDC.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpzd7u7i8i.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\HardwareSerial.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpv5cmbobx.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\IPAddress.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp7kz64o1h.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\IPv6Address.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp_yi7usp1.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\MD5Builder.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp4rp81dgp.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\Print.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmphqq1i5x7.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\Stream.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp1dm_6s4w.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\StreamString.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpsoet2h5y.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\USB.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpg7n2v_oc.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\USBCDC.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp6tbbmcvp.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\USBMSC.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpz_c4yhe1.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\WMath.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp80qnkh6e.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\WString.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmps_884npq.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\base64.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp6z1fmge7.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\cbuf.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpy8oaqcos.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\esp32-hal-adc.c"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpif41p60t.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\esp32-hal-bt.c"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpjo7p7gy3.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\esp32-hal-cpu.c"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp4546fugt.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\esp32-hal-dac.c"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp_3r3d1sq.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\esp32-hal-gpio.c"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpsui831xw.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\esp32-hal-i2c-slave.c"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp4bt97wmg.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\esp32-hal-i2c.c"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp05k9vuil.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\esp32-hal-ledc.c"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpd0qwt026.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\esp32-hal-matrix.c"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpkhtn3qzs.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\esp32-hal-misc.c"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpgxhnknz6.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\esp32-hal-psram.c"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpag3qqlzo.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\esp32-hal-rmt.c"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpkcctuu4b.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\esp32-hal-sigmadelta.c"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpcnjkqq4k.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\esp32-hal-spi.c"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpdj6llbk9.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\esp32-hal-time.c"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpe2zxykwm.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\esp32-hal-timer.c"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpywslg4y1.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\esp32-hal-tinyusb.c"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp6i_29h8c.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\esp32-hal-touch.c"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmppuetrvya.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\esp32-hal-uart.c"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpyqn_k424.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\firmware_msc_fat.c"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpl4ziyag4.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\libb64\\cdecode.c"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp1tjgmw0d.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\libb64\\cencode.c"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp2tv2tw_s.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\main.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp3fn7dtqw.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\stdlib_noniso.c"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpvx8pghmq.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\wiring_pulse.c"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpyniemqby.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\cores\\esp32\\wiring_shift.c"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp5wgb3hq0.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\libdeps\\esp-wrover-kit\\AsyncTCP@src-7fb2940bccb78b8d2de6915ae328b7fc\\src\\AsyncTCP.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp7zfyiltj.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\libraries\\FS\\src\\FS.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp_ewkqal7.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\libraries\\FS\\src\\vfs_api.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpinlzcn7r.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\libraries\\Update\\src\\HttpsOTAUpdate.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpqp3kuxuc.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\libraries\\Update\\src\\Updater.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp_zy9lr_r.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\libraries\\WiFi\\src\\WiFi.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpyz3otvyw.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\libraries\\WiFi\\src\\WiFiAP.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpkcwinixl.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\libraries\\WiFi\\src\\WiFiClient.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp6rbwh9kg.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\libraries\\WiFi\\src\\WiFiGeneric.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpbw0ikue8.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\libraries\\WiFi\\src\\WiFiMulti.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp6ewqo1ql.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\libraries\\WiFi\\src\\WiFiSTA.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpzpt89v43.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\libraries\\WiFi\\src\\WiFiScan.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmponkzartr.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\libraries\\WiFi\\src\\WiFiServer.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp6t062dgc.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\libraries\\WiFi\\src\\WiFiUdp.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpz0s0j07z.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\libdeps\\esp-wrover-kit\\AsyncElegantOTA\\src\\AsyncElegantOTA.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpa5hcg5h3.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\libdeps\\esp-wrover-kit\\ESP Async WebServer\\src\\AsyncEventSource.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpukxnjqnm.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\libdeps\\esp-wrover-kit\\ESP Async WebServer\\src\\AsyncWebSocket.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp7c1ote8c.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\libdeps\\esp-wrover-kit\\ESP Async WebServer\\src\\SPIFFSEditor.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpu3h2u9xn.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\libdeps\\esp-wrover-kit\\ESP Async WebServer\\src\\WebAuthentication.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp40kl3jxc.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\libdeps\\esp-wrover-kit\\ESP Async WebServer\\src\\WebHandlers.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpsnp8mekn.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\libdeps\\esp-wrover-kit\\ESP Async WebServer\\src\\WebRequest.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp7ojhv9vm.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\libdeps\\esp-wrover-kit\\ESP Async WebServer\\src\\WebResponses.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpfpbiai4m.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\libdeps\\esp-wrover-kit\\ESP Async WebServer\\src\\WebServer.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpidaxax0a.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\libdeps\\esp-wrover-kit\\LXESP32DMX\\src\\LXESP32DMX.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpnbyy2frh.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\libdeps\\esp-wrover-kit\\LXESP32DMX\\src\\LXHardwareSerial.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp9kviqf6v.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\libdeps\\esp-wrover-kit\\LXESP32DMX\\src\\TOD.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpf2n_xm2w.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\libdeps\\esp-wrover-kit\\LXESP32DMX\\src\\UID.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpj5dkc32c.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\libdeps\\esp-wrover-kit\\LXESP32DMX\\src\\rdm_utility.c"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpc1jxa51_.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\libdeps\\esp-wrover-kit\\NTPClient\\NTPClient.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpnnmhq5cq.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\libdeps\\esp-wrover-kit\\ESPDateTime\\src\\DateTime.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpz5fk3194.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\libdeps\\esp-wrover-kit\\ArduinoNvs\\src\\ArduinoNvs.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpckabbgeh.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\libraries\\SPI\\src\\SPI.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpnsr_jf_f.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\libdeps\\esp-wrover-kit\\EEPROM_SPI_WE\\src\\EEPROM_SPI_WE.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmphczg73sh.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\libraries\\EEPROM\\src\\EEPROM.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpljgrnpih.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\libraries\\SPIFFS\\src\\SPIFFS.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp38i5zpr9.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\libraries\\ESPmDNS\\src\\ESPmDNS.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmprab8787n.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\libraries\\Ethernet\\src\\ETH.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpd2g6mt0f.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\.platformio\\packages\\framework-arduinoespressif32@3.20002.220503\\libraries\\Preferences\\src\\Preferences.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpiz7qyvqy.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\src\\api.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmpgaswwsrl.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\src\\arg.cpp"
+    },
+    {
+        "command": "C:\\Users\\Geko\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\.pio\\build\\esp-wrover-kit\\tmp51pcv12x.tmp",
+        "directory": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx",
+        "file": "C:\\Users\\Geko\\Documents\\PlatformIO\\Projects\\bridge_dmx\\src\\main.cpp"
+    }
+]

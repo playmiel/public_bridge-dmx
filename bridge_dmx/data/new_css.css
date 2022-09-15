@@ -1,0 +1,283 @@
+.navbar {
+  transition: all 0.75s;
+}
+
+.navbar .nav-link {
+  color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+}
+
+.cadre_scroll {
+  overflow: scroll;
+  max-height: 850px;
+}
+
+/* Modifier le style de la barre de navigation lors du défilement */
+.dropdown-menu {
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+/* tbody,thead {
+  height: 100%;
+  display: inline-block;
+  width: 100%;
+  overflow: auto;
+}
+ */
+ .btn-group {
+  white-space: nowrap;
+}
+
+.btn.btn-primary,
+.btn.btn-success {
+  float: none;
+}
+tr,
+td {
+  width: 16.66%;
+}
+svg {
+  display: none;
+}
+#nom_du_canal_1 {
+  width: 75%;
+}
+#nom_du_canal_2{width: 75%;}
+#nom_du_canal_3{width: 75%;}
+#nom_du_canal_4{width: 75%;}
+#nom_du_canal_5{width: 75%;}
+#nom_du_canal_6{width: 75%;}
+#nom_du_canal_7{width: 75%;}
+#nom_du_canal_8{width: 75%;}
+#nom_du_canal_9{width: 75%;}
+#nom_du_canal_10{width: 75%;}
+#nom_du_canal_11{width: 75%;}
+#nom_du_canal_12{width: 75%;}
+#nom_du_canal_13{width: 75%;}
+#nom_du_canal_14{width: 75%;}
+#nom_du_canal_15{width: 75%;}
+#nom_du_canal_16{width: 75%;}
+#nom_du_canal_17{width: 75%;}
+#nom_du_canal_18{width: 75%;}
+#nom_du_canal_19{width: 75%;}
+#nom_du_canal_20{width: 75%;}
+#nom_du_canal_21{width: 75%;}
+#nom_du_canal_22{width: 75%;}
+#nom_du_canal_23{width: 75%;}
+#nom_du_canal_24{width: 75%;}
+#nom_du_canal_25{width: 75%;}
+#nom_du_canal_26{width: 75%;}
+#nom_du_canal_27{width: 75%;}
+#nom_du_canal_28{width: 75%;}
+#nom_du_canal_29{width: 75%;}
+#nom_du_canal_30{width: 75%;}
+#nom_du_canal_31{width: 75%;}
+#nom_du_canal_32{width: 75%;}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#table {
+  max-height: 280px;
+  width: 90%;
+  justify-content: center;
+  overflow-y: auto;
+}
+.navbar.active {
+  background: #fff;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+  color: rgb(167, 167, 167);
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+  color: rgb(167, 167, 167);
+  text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+  color: rgb(167, 167, 167);
+}
+
+/* Modifier le style de la barre de navigation sur les petits affichages */
+
+@media (max-width: 1000px) {
+  .navbar {
+    background: #fff;
+  }
+
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+    color: rgb(167, 167, 167);
+  }
+}
+
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.tabbable-line > .nav-tabs > li {
+  margin: auto 2px;
+}
+
+.nav-tabs > li {
+  float: none;
+  text-align: center;
+}
+
+.nav > li {
+  display: inline-block;
+}
+
+.tabbable-line {
+  text-align: center;
+}
+
+/* Mode par défaut */
+
+.tabbable-line > .nav-tabs {
+  display: inline-block;
+}
+
+div {
+  margin-top: 5px;
+}
+
+input:invalid + span:after {
+  content: "✖";
+  padding-left: 5px;
+}
+
+input:valid + span:after {
+  content: "✓";
+  padding-left: 5px;
+}
+
+input[type="number"] {
+  width: 100px;
+}
+
+input + span {
+  padding-right: 30px;
+}
+
+.text-small {
+  font-size: 0.9rem !important;
+}
+
+ion-icon {
+  --ionicon-stroke-width: 16px;
+}
+
+ion-icon {
+  font-size: 16px;
+}
+
+ion-icon {
+  color: rgb(250, 250, 250);
+  background: rgb(253, 29, 29);
+  background: linear-gradient(
+    90deg,
+    rgb(255, 0, 0) 0%,
+    rgb(13, 255, 0) 50%,
+    rgb(0, 13, 255) 100%
+  );
+}
+
+body {
+  min-height: 110vh;
+  background-color: #000000;
+  background-image: linear-gradient(135deg, #000000 0%, #c4e0e5 100%);
+}
+
+/* non actif */
+
+.nav-pills .pill-1 .nav-link:not(.active) {
+  background-color: rgb(255, 0, 0);
+}
+
+.nav-pills .pill-2 .nav-link:not(.active) {
+  background-color: rgb(0, 0, 0);
+}
+
+.nav-pills .pill-3 .nav-link:not(.active) {
+  background-color: rgb(0, 0, 250);
+  color: white;
+}
+
+/* actif */
+
+.nav-pills .pill-1 .nav-link {
+  background-color: rgba(255, 0, 0, 0.2);
+  color: white;
+}
+
+.nav-pills .pill-2 .nav-link {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-pills .pill-3 .nav-link {
+  background-color: rgba(0, 0, 250, 0.2);
+  color: white;
+}
+
+.tab-pane {
+  height: 100%;
+  overflow-y: auto;
+  width: 100%;
+}
+
+#bootstrap-alert {
+  margin: auto;
+  width: 280px;
+  box-shadow: 1px 1px 3px black;
+  float: right;
+}
+
+.hide {
+  display: none;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.center-div {
+  justify-content: center;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+html,
+body {
+  overflow-y: auto;
+}
+.modal {
+  text-align: center;
+}

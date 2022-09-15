@@ -1,0 +1,126 @@
+{
+	"folders": [
+		{
+			"name": "bridge_dmx",
+			"path": "."
+		},
+		{
+			"name": "test",
+			"path": "..\\test"
+		},
+		{
+			"name": "i2c",
+			"path": "..\\i2c"
+		},
+		{
+			"name": "generer",
+			"path": "..\\generer"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.yaml": "home-assistant",
+			"charconv": "cpp",
+			"chrono": "cpp",
+			"compare": "cpp",
+			"locale": "cpp",
+			"ostream": "cpp",
+			"regex": "cpp",
+			"system_error": "cpp",
+			"xlocale": "cpp",
+			"xlocinfo": "cpp",
+			"xlocnum": "cpp",
+			"xloctime": "cpp",
+			"xmemory": "cpp",
+			"xstddef": "cpp",
+			"xstring": "cpp",
+			"xutility": "cpp",
+			"*.rh": "cpp",
+			"*.tcc": "cpp",
+			"fstream": "cpp",
+			"istream": "cpp",
+			"typeinfo": "cpp",
+			"random": "cpp",
+			"optional": "cpp",
+			"atomic": "cpp",
+			"deque": "cpp",
+			"forward_list": "cpp",
+			"ios": "cpp",
+			"list": "cpp",
+			"vector": "cpp",
+			"xhash": "cpp",
+			"xiosbase": "cpp",
+			"xtree": "cpp",
+			"string": "cpp",
+			"unordered_map": "cpp",
+			"unordered_set": "cpp",
+			"xlocmon": "cpp",
+			"format": "cpp",
+			"iosfwd": "cpp",
+			"numeric": "cpp",
+			"ratio": "cpp",
+			"sstream": "cpp",
+			"type_traits": "cpp",
+			"cmath": "cpp",
+			"thread": "cpp",
+			"xlocmes": "cpp",
+			"algorithm": "cpp",
+			"limits": "cpp",
+			"utility": "cpp",
+			"cstdlib": "cpp",
+			"array": "cpp",
+			"memory": "cpp",
+			"tuple": "cpp",
+			"functional": "cpp",
+			"bitset": "cpp",
+			"exception": "cpp",
+			"iterator": "cpp",
+			"map": "cpp",
+			"mutex": "cpp",
+			"shared_mutex": "cpp",
+			"stop_token": "cpp",
+			"streambuf": "cpp",
+			"memory_resource": "cpp",
+			"string_view": "cpp"
+		},
+		"openhab.useRestApi": false,
+		"cSpell.language": "fr,fr-FR"
+	},
+	"launch": {
+		"configurations": [
+			{
+				"type": "platformio-debug",
+				"request": "launch",
+				"name": "PIO Debug",
+				"executable": "C:/Users/Denis/Documents/PlatformIO/Projects/bridge_dmx/.pio/build/esp-wrover-kit/firmware.elf",
+				"projectEnvName": "esp-wrover-kit",
+				"toolchainBinDir": "C:/Users/Denis/.platformio/packages/toolchain-xtensa32/bin",
+				"internalConsoleOptions": "openOnSessionStart",
+				"preLaunchTask": {
+					"type": "PlatformIO",
+					"task": "Pre-Debug"
+				}
+			},
+			{
+				"type": "platformio-debug",
+				"request": "launch",
+				"name": "PIO Debug (skip Pre-Debug)",
+				"executable": "C:/Users/Denis/Documents/PlatformIO/Projects/bridge_dmx/.pio/build/esp-wrover-kit/firmware.elf",
+				"projectEnvName": "esp-wrover-kit",
+				"toolchainBinDir": "C:/Users/Denis/.platformio/packages/toolchain-xtensa32/bin",
+				"internalConsoleOptions": "openOnSessionStart"
+			},
+			{
+				"type": "platformio-debug",
+				"request": "launch",
+				"name": "PIO Debug (without uploading)",
+				"executable": "C:/Users/Denis/Documents/PlatformIO/Projects/bridge_dmx/.pio/build/esp-wrover-kit/firmware.elf",
+				"projectEnvName": "esp-wrover-kit",
+				"toolchainBinDir": "C:/Users/Denis/.platformio/packages/toolchain-xtensa32/bin",
+				"internalConsoleOptions": "openOnSessionStart",
+				"loadMode": "manual"
+			},
+
+		]
+	}
+}
